@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GitHub Profile README Generator</title>
+	<script src="https://kit.fontawesome.com/5a740087a2.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style.css">
+	<script src="main.js"></script>
+</head>
+
+<body>
+	<div class="header">
+		GitHub Profile README Generator
+		<i class="fa-solid fa-user"></i>
+	</div>
+
+	<div class="input-wrapper">
+		<div class="input-header">Name or Username</div>
+		<input type="text" id="name">
+
+		<br><br>
+
+		<div class="input-header">Short Description</div>
+		<input type="text" id="short-description">
+
+		<br><br>
+
+		<button id="generate-button">
+			<span class="button-text">Generate!</span>
+			<i class="fa-solid fa-code"></i>
+		</button>
+	</div>
+
+	<br><br>
+
+	<div class="content-wrapper">
+		<button id="copy-button"><i class="fa-regular fa-copy"></i></button>
+		<div id="content-body">
+			
+		</div>
+	</div>
+</body>
+
+</html>
