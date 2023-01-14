@@ -6,7 +6,6 @@ async function getInputs() {
 	Array.from(document.querySelectorAll(".input-wrapper input")).forEach(function (input) {
 		inputs[input.id] = input.value;
 	});
-	console.log(inputs)
 }
 
 async function generate() {
@@ -17,7 +16,7 @@ async function generate() {
 
 	document.getElementById("copy-button").style = "opacity: 100%;";
 
-	createIn(content, 'h1', `Hi! I'm ${inputs.name}.`, { "align": "center" });
+	createIn(content, 'h1', `Hi! I'm ${inputs.name}. 👋`, { "align": "center" });
 	createIn(content, 'h3', inputs["short-description"], { "align": "center" });
 }
 
