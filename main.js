@@ -16,11 +16,11 @@ async function generate() {
 
 	document.getElementById("copy-button").style = "opacity: 100%;";
 
-	createIn(content, 'h1', `Hi! I'm ${inputs.name}. 👋`, { "align": "center" });
-	createIn(content, 'h3', inputs["short-description"], { "align": "center" });
+	create(content, 'h1', `Hi! I'm ${inputs.name}. 👋`, { "align": "center" });
+	create(content, 'h3', inputs["short-description"], { "align": "center" });
 }
 
-async function createIn(parent, type, content, attributes = {}) {
+async function create(parent, type, content, attributes = {}) {
 	const element = document.createElement(type);
 	element.innerHTML = content;
 	markdown += `<${type} `;
