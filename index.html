@@ -19,16 +19,31 @@
 
 	<div class="input-wrapper">
 		<div class="input-header">Name or Username</div>
-		<input type="text" id="name">
-
-		<br><br>
+		<input type="text" id="name-prefix" value="Hi! I'm" style="width:20%; text-align: right;">
+		<input type="text" id="name" placeholder="" style="width:50%; text-align: center;">
+		<input type="text" id="name-suffix" value=". 👋" style="width:20%;">
 
 		<div class="input-header">Short Description</div>
-		<input type="text" id="short-description">
+		<input type="text" id="short-description" style="width:91%;">
+		
+		<div class="section-header">Front-End Languages</div>
 
-		<br><br>
+		<div class="lang">
+			<img src="resources/html5.png" alt="HTML5">
+			<input type="checkbox" id="HTML5">
+		</div>
 
-		<button id="generate-button">
+		<div class="lang">
+			<img src="resources/css3.png" alt="HTML5">
+			<input type="checkbox" id="CSS3">
+		</div>
+
+		<div class="lang">
+			<img src="resources/javascript.png" alt="HTML5">
+			<input type="checkbox" id="JavaScript">
+		</div>
+
+		<br><button id="generate-button">
 			<span class="button-text">Generate!</span>
 			<i class="fa-solid fa-code"></i>
 		</button>

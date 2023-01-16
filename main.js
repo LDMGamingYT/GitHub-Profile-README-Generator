@@ -16,7 +16,7 @@ async function generate() {
 
 	document.getElementById("copy-button").style = "opacity: 100%;";
 
-	create(content, 'h1', `Hi! I'm ${inputs.name}. 👋`, { "align": "center" });
+	create(content, 'h1', `${inputs['name-prefix']} ${inputs.name}${inputs['name-suffix']}`, { "align": "center" });
 	create(content, 'h3', inputs["short-description"], { "align": "center" });
 }
 
