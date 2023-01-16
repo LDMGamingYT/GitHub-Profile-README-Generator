@@ -42,24 +42,25 @@ body {
 	overflow: hidden;
 	font-size: 14px;
 	cursor: pointer;
-	transition: 150ms ease-in-out;
+	transition: 25ms ease-in-out;
 }
 
 #generate-button:hover {
 	background-color: #8ee98e;
-	transition: 150ms ease-in-out;
+	transition: 25ms ease-in-out;
 }
 
 #generate-button:active {
 	background-color: #70df70;
-	transition: 50ms ease-in-out;
+	transition: 25ms ease-in-out;
 }
 
 .button-text,
 #generate-button>i {
 	display: inline-flex;
-	padding: 6px 12px;
 	align-items: center;
+	padding: 12px 12px;
+	transform: translateY(-3px);
 }
 
 #generate-button>i {
@@ -117,4 +118,50 @@ p {
 h3 {
 	font-size: 1.25em;
 	font-weight: 600;
+}
+
+input {
+	margin-bottom: 1rem;
+	border: none;
+	border-radius: 5px;
+	outline: none;
+	transition: 150ms ease-in-out;
+	padding: 3px;
+	background-color: #252d39;
+	color: var(--white);
+}
+
+input:focus {
+	outline: rgb(31, 158, 201) solid 3px;
+	transition: 150ms ease-in-out;
+}
+
+.lang>img {
+	height: 4rem;
+	size: 4rem;
+	margin-right: 1rem;
+	background-color: #21262d;
+	padding: 4px;
+	border-radius: 5px;
+}
+
+.lang>input {
+	border: none;
+	outline: none;
+}
+
+.lang {
+	display: inline-flex;
+	align-items: center;
+	margin: 0 2rem 1rem 0;
+	background-color: #161b22;
+	padding: 6px;
+	border-radius: 5px;
+}
+
+.section-header {
+	margin-bottom: 1rem;
+	font-size: 18px;
+	font-weight: 500;
+	height: fit-content;
 }
