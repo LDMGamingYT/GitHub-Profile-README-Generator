@@ -1,4 +1,5 @@
 var inputs = {};
+var languages = {};
 var markdown = "";
 
 async function setupImageButtons() {
@@ -15,15 +16,14 @@ async function toggleBooleanAttribute(element, attribute) {
 	}
 }
 
-/* TODO: Make this function also get the values for image buttons,
-put that in another dictionary (buttonInputs?) and it might look like this
-{ "HTML5": true }
-make sure the html5 is a friendly name, which can be retrived from the img-button
-*/
 async function getInputs() {
 	inputs = {};
 	Array.from(document.querySelectorAll(".input-wrapper input")).forEach(function (input) {
 		inputs[input.id] = input.value;
+	});
+	languages = {};
+	Array.from(document.querySelectorAll(".img-button")).forEach(function (element) {
+		languages[element.id] = element.getAttribute("selected");
 	});
 }
 
