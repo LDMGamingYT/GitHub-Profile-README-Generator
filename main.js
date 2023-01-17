@@ -37,6 +37,11 @@ async function generate() {
 
 	create(content, 'h1', `${inputs['name-prefix']} ${inputs.name}${inputs['name-suffix']}`, { "align": "center" });
 	create(content, 'h3', inputs["short-description"], { "align": "center" });
+	Object.entries(languages).forEach(function(object) {
+		if (object[1] == "true") {
+			create(content, 'p', object[0]);
+		}
+	});
 }
 
 async function create(parent, type, content, attributes = {}) {
